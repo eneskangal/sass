@@ -1,0 +1,526 @@
+@charset "UTF-8";
+/*
+ Bu site Enes Kangal tarafından yapılmıştır.
+ Kopyalanması yasaktır.
+ 20 Nisan 2021
+ İletişim için: eneskangal@gmail.com.
+*/
+/* adobe font yükleme */
+@import url("https://use.typekit.net/xqy8etp.css");
+/* variables */
+/* menü ayarlanaması */
+header .container nav.fixed-top {
+  max-width: 2000px;
+  margin: auto; }
+  header .container nav.fixed-top .collapse ul li a {
+    font-family: poppins, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    color: white;
+    line-height: 1.4;
+    font-size: 16px;
+    transition: 0.5; }
+    header .container nav.fixed-top .collapse ul li a:hover {
+      color: black; }
+
+/* Stickbar Ayarlanması*/
+html {
+  scroll-behavior: smooth; }
+
+.fixed-top {
+  max-width: 1140px;
+  margin: auto;
+  -webkit-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear; }
+
+.fixed-top.change-color {
+  max-width: 2000px;
+  margin-top: 0;
+  background-color: rgba(38, 0, 0, 0.2);
+  color: white; }
+
+.fixed-top.change-fix-top {
+  max-width: 2000px;
+  margin-top: 0;
+  background-color: #262bdb;
+  color: white; }
+
+/*hero ayarlanaması */
+.hero {
+  height: 100vh;
+  background-image: url(../img/hero-bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .hero .container .row .col-md-6 {
+    display: flex;
+    align-items: center;
+    height: 100vh; }
+    .hero .container .row .col-md-6 img {
+      cursor: pointer; }
+    .hero .container .row .col-md-6 #kutu h1 {
+      line-height: 1.4;
+      font-style: normal;
+      color: white;
+      font-family: poppins, sans-serif;
+      font-weight: 500;
+      font-size: 50px; }
+    .hero .container .row .col-md-6 #kutu p {
+      line-height: 1.4;
+      font-style: normal;
+      color: white;
+      font-family: poppins, sans-serif;
+      font-weight: 400;
+      font-size: 18px; }
+    .hero .container .row .col-md-6 #kutu button {
+      border: none;
+      outline: none;
+      width: 180px;
+      height: 60px;
+      background-color: white;
+      border-radius: 16px;
+      color: black;
+      font-style: normal;
+      line-height: 1.4;
+      font-family: poppins, sans-serif;
+      font-weight: 500;
+      font-size: 20px;
+      transition: 0.5s; }
+      .hero .container .row .col-md-6 #kutu button:hover {
+        background-color: black;
+        color: white; }
+    .hero .container .row .col-md-6 #kutu a {
+      color: white;
+      font-style: normal;
+      line-break: 1.4;
+      font-family: poppins, sans-serif;
+      font-weight: 500;
+      font-size: 20px;
+      transition: 0.5s; }
+      .hero .container .row .col-md-6 #kutu a:hover {
+        text-decoration: none;
+        color: black; }
+
+/* Servicies Ayarlanması */
+.services {
+  padding: 100px 0;
+  text-align: center; }
+  .services .container .row .col-xl-4 .card2 {
+    height: auto;
+    width: 100%;
+    background-color: #F6F6F6;
+    border-radius: 16px;
+    padding: 30px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: 0.5s; }
+    .services .container .row .col-xl-4 .card2:hover {
+      background-color: #333697; }
+    .services .container .row .col-xl-4 .card2:hover p, .services .container .row .col-xl-4 .card2 h3 {
+      color: white; }
+    .services .container .row .col-xl-4 .card2:hover h3 {
+      color: white; }
+    .services .container .row .col-xl-4 .card2 img {
+      cursor: pointer; }
+    .services .container .row .col-xl-4 .card2 h3 {
+      line-height: 1.4;
+      color: black;
+      font-style: normal;
+      font-family: poppins, sans-serif;
+      font-weight: 500;
+      font-size: 34px;
+      margin: 15px 0; }
+    .services .container .row .col-xl-4 .card2 p {
+      color: black;
+      font-style: normal;
+      line-height: 1.4;
+      font-family: poppins, sans-serif;
+      font-weight: 400;
+      font-size: 14px; }
+    .services .container .row .col-xl-4 .card2 button {
+      outline: none;
+      border: none;
+      width: 200px;
+      height: 60px;
+      border-radius: 16px;
+      color: black;
+      font-style: normal;
+      line-height: 1.4;
+      font-family: poppins, sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      transition: 0.5s; }
+      .services .container .row .col-xl-4 .card2 button:hover {
+        background-color: black;
+        color: white; }
+  .services .container #services-text h2 {
+    color: black;
+    font-style: normal;
+    line-height: 1.4;
+    font-family: poppins, sans-serif;
+    font-weight: 500;
+    font-size: 50px; }
+  .services .container #services-text p {
+    max-width: 800px;
+    margin: auto; }
+
+/* About */
+#about {
+  padding: 100px 0; }
+  #about .container h2 {
+    color: black;
+    font-style: normal;
+    line-height: 1.4;
+    font-size: 50px;
+    font-family: poppins, sans-serif;
+    font-weight: 500;
+    text-align: center; }
+  #about .container h3 {
+    color: #241B1B;
+    font-style: normal;
+    line-height: 1.4;
+    font-size: 20px;
+    font-family: poppins, sans-serif;
+    font-weight: 400;
+    text-align: center;
+    margin: 15px auto;
+    max-width: 800px; }
+  #about .container .row .col-md-6 img {
+    cursor: pointer; }
+  #about .container .row .col-md-6 p {
+    color: #241B1B;
+    line-height: 1.4;
+    font-style: normal;
+    font-weight: 500;
+    font-family: poppins, sans-serif;
+    font-size: 16px; }
+  #about .container .row .col-md-6 button {
+    width: 250px;
+    height: 60px;
+    border-radius: 16px;
+    border: 1px solid #333697;
+    background-color: white;
+    transition: 0.5s;
+    color: black;
+    line-height: 1.4;
+    font-style: normal;
+    font-family: poppins, sans-serif;
+    font-weight: 500;
+    font-size: 20px; }
+    #about .container .row .col-md-6 button:hover {
+      background-color: black;
+      color: white;
+      border: none; }
+
+/* why */
+#why {
+  padding: 100px 0;
+  background-image: url(../img/why-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  #why .container .row .col-md-4 img {
+    cursor: pointer; }
+  #why .container .row .col-md-8 h2 {
+    color: white;
+    font-style: normal;
+    line-height: 1.4;
+    font-family: poppins, sans-serif;
+    font-size: 50px;
+    font-weight: 500; }
+  #why .container .row .col-md-8 p {
+    color: white;
+    font-style: normal;
+    line-height: 1.4;
+    font-family: poppins, sans-serif;
+    font-size: 20px;
+    font-weight: 400; }
+  #why .container .row .col-md-8 .row .col-lg-4 img {
+    cursor: pointer; }
+  #why .container .row .col-md-8 .row .col-lg-4 .d-flex h5 {
+    color: white;
+    font-style: normal;
+    line-height: 1.4;
+    font-family: poppins, sans-serif;
+    font-size: 30px;
+    font-weight: 500; }
+  #why .container .row .col-md-8 .row .col-lg-4 .d-flex h6 {
+    color: white;
+    font-style: normal;
+    line-height: 1.4;
+    font-family: poppins, sans-serif;
+    font-size: 14px;
+    font-weight: 500; }
+
+/* our */
+#our {
+  padding: 100px 0; }
+  #our .container h2 {
+    color: black;
+    font-style: normal;
+    line-height: 1.4;
+    font-family: poppins, sans-serif;
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center; }
+  #our .container h6 {
+    color: #241B1B;
+    font-style: normal;
+    line-height: 1.4;
+    font-family: poppins, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    margin: 15px 0; }
+  #our .container .row .col-md-6 p {
+    color: #241B1B;
+    font-style: normal;
+    line-height: 1.4;
+    font-family: poppins, sans-serif;
+    font-size: 16px;
+    font-weight: 500; }
+  #our .container .row .col-md-6 img {
+    cursor: pointer; }
+  #our .container .row .col-md-6 button {
+    outline: none;
+    width: 180px;
+    height: 60px;
+    background-color: white;
+    border-radius: 16px;
+    border: 1px solid #333697;
+    color: black;
+    font-style: normal;
+    line-height: 1.4;
+    font-family: poppins, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    transition: 0.5s; }
+    #our .container .row .col-md-6 button:hover {
+      background-color: black;
+      color: white;
+      border: none; }
+
+/* Port */
+#port {
+  padding: 100px 0; }
+  #port .container h6 {
+    line-height: 1.4;
+    font-style: normal;
+    color: #333697;
+    font-family: roboto, sans-serif;
+    font-weight: 500;
+    font-size: 24px; }
+  #port .container button {
+    width: 120px;
+    height: 60px;
+    background-color: #F3F3F3;
+    border: 1px solid #F3F3F3;
+    outline: none;
+    color: #797979;
+    line-height: 1.4;
+    font-style: normal;
+    font-family: poppins, sans-serif;
+    font-weight: 500;
+    font-size: 20px; }
+  #port .container h2 {
+    line-height: 1.4;
+    color: black;
+    font-stretch: normal;
+    font-family: roboto, sans-serif;
+    font-weight: 500;
+    font-size: 50px; }
+  #port .container img {
+    cursor: pointer; }
+
+/* Client */
+#client .container .enes {
+  background-color: #EFEFFE;
+  padding: 30px;
+  -webkit-box-shadow: 3px 0px 6px 0px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 3px 0px 6px 0px rgba(0, 0, 0, 0.16);
+  box-shadow: 3px 0px 6px 0px rgba(0, 0, 0, 0.16); }
+  #client .container .enes div {
+    margin: 30px; }
+    #client .container .enes div i {
+      color: #FFF706;
+      font-size: 20px; }
+    #client .container .enes div h4 {
+      margin-top: 30px;
+      color: #222D39 !important;
+      font-family: poppins, sans-serif;
+      line-height: 1.4;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px; }
+    #client .container .enes div h5 {
+      color: black;
+      line-height: 1.4;
+      font-style: normal;
+      font-family: roboto, sans-serif;
+      font-size: 18px;
+      font-weight: 500; }
+    #client .container .enes div h6 {
+      color: black;
+      font-style: normal;
+      line-height: 1.4;
+      font-family: roboto, sans-serif;
+      font-size: 14px;
+      font-weight: 500; }
+      #client .container .enes div h6 a {
+        color: #333697 !important; }
+        #client .container .enes div h6 a:hover {
+          text-decoration: none; }
+#client .container .d-flex img {
+  margin-right: 30px; }
+#client .container .d-flex div h2 {
+  color: black;
+  line-height: 1.4;
+  font-style: normal;
+  font-family: roboto, sans-serif;
+  font-weight: 500;
+  font-size: 50px; }
+#client .container .d-flex div p {
+  color: #707070;
+  line-height: 1.4;
+  font-style: normal;
+  font-family: roboto, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  width: 80%; }
+#client .container .d-flex div button {
+  width: 250px;
+  height: 70px;
+  background-color: #F3F3F3;
+  border-radius: 16px;
+  outline: none;
+  color: #707070;
+  line-height: 1.4;
+  font-style: normal;
+  font-family: poppins, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  transition: 0.5s; }
+  #client .container .d-flex div button:hover {
+    background-color: black;
+    color: white; }
+
+/* Contact */
+#contact {
+  padding: 100px 0; }
+  #contact .contact-box {
+    background-color: #333697;
+    border-radius: 16px;
+    height: 200px;
+    align-items: center;
+    padding: 30px; }
+    #contact .contact-box div h6 {
+      color: white;
+      font-style: normal;
+      line-height: 1.4;
+      font-family: poppins, sans-serif;
+      font-weight: 500;
+      font-size: 24px; }
+    #contact .contact-box div p {
+      color: white;
+      font-style: normal;
+      line-height: 1.4;
+      font-family: open, sans-serif;
+      font-weight: 400;
+      font-size: 18px; }
+    #contact .contact-box div input {
+      width: 300px;
+      height: 50px;
+      border-radius: 40px;
+      padding: 16px;
+      cursor: pointer;
+      position: relative;
+      color: #7C7C7C;
+      line-height: 1.4;
+      font-style: normal;
+      font-family: poppins, sans-serif;
+      font-weight: 400;
+      font-size: 12px; }
+    #contact .contact-box div button {
+      position: absolute;
+      left: 60%;
+      top: 15%;
+      height: 30px;
+      width: 100px;
+      outline: none;
+      border: none;
+      background-color: #333697;
+      border-radius: 16px;
+      color: white;
+      line-height: 1.4;
+      font-style: normal;
+      font-family: poppins, sans-serif;
+      font-weight: 400;
+      font-size: 12px; }
+
+/* Footer */
+footer {
+  padding: 100px 0;
+  background-color: #EBEBF8; }
+  footer .container .row .d-flex div p {
+    color: #677294;
+    line-height: 1.4;
+    font-style: normal;
+    font-family: poppins, sans-serif;
+    font-size: 12px;
+    font-weight: 400; }
+  footer .container .row .d-flex div ul {
+    float: right; }
+    footer .container .row .d-flex div ul li {
+      display: inline-block; }
+      footer .container .row .d-flex div ul li a {
+        color: #677294;
+        line-height: 1.4;
+        font-style: normal;
+        font-family: poppins, sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        padding: 0 20px;
+        transition: 0.5s; }
+        footer .container .row .d-flex div ul li a:hover {
+          color: black;
+          text-decoration: none; }
+  footer .container .row .col-md-3 h6 {
+    color: #000;
+    line-height: 1.4;
+    font-style: normal;
+    font-family: poppins, sans-serif;
+    font-weight: 600;
+    font-size: 18px; }
+  footer .container .row .col-md-3 p {
+    color: #8A8A8A;
+    line-height: 1.4;
+    font-style: normal;
+    font-family: poppins, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.5s; }
+  footer .container .row .col-md-3 ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    footer .container .row .col-md-3 ul li a {
+      color: #8A8A8A;
+      line-height: 1.4;
+      font-style: normal;
+      font-family: poppins, sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      transition: 0.5s; }
+      footer .container .row .col-md-3 ul li a:hover {
+        text-decoration: none;
+        color: black; }
+
+@media (max-width: 767.98px) {
+  #hero img {
+    display: none; } }
+@media (max-width: 991.98px) {
+  #hero h1 {
+    font-size: 24px !important; } }
+
+/*# sourceMappingURL=style.css.map */
