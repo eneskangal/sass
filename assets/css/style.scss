@@ -698,6 +698,9 @@ footer{
     img{
         display: none;
     }
+    #contact{
+        display: none!important;      
+    }
 }}
 
 
@@ -705,6 +708,18 @@ footer{
     h1{
         font-size: 24px!important;
     }
+    #client{
+        .container{
+            .d-flex{
+                div{
+                    h2{
+                        font-size: 40px!important;
+                    }
+                }
+            }
+
+        }
+    }   
 }}
 
 @media (max-width: 1199.98px) {}
