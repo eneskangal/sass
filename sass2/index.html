@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="tr">
+  <head>    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">   
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Ana Sayfa</title>
+  </head>
+  <body>
+
+    <header>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+          <a class="navbar-brand" href="#">logo.</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">SERVICES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> PRICES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>  
+
+    <section id="hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 d-flex  justify-content-center flex-column" style="height: 100vh;">
+            <ul>
+              <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+              <li><a href="#"><i class="bi bi-google"></i></a></li>
+              <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+              <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+              <li><a href="#"><i>|</i></a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 d-flex  justify-content-center flex-column" style="height: 100vh;">
+            <h1>SOCIAL 
+              MEDIA FOR BUSINESS</h1>
+              <p>PERFOMANCE BASED SOCIAL MEDIA AGENCY
+                WE ARE LOREM MEDIA</p>
+                <button>GET A FREE AUDIT</button>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <img src="assets/img/mouse.png" alt="Photo" title="Photo" class="img-fluid" style="cursor: pointer;">
+        </div>       
+      </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>     
+    <script>
+      $(document).ready(function () {
+        // Add smooth scrolling to all links
+        $("a").on('click', function (event) {
+  
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+  
+            // Store hash
+            var hash = this.hash;
+  
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function () {
+  
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+          } // End if
+        });
+      });
+    </script>
+    <script>
+      jQuery(document).ready(function ($) {
+        $(window).scroll(function () {
+          var scrollPosition = $(window).scrollTop(),
+            navbar = $('.fixed-top');
+  
+  
+  
+          if (scrollPosition > 50) {
+            navbar.addClass('change-fix-top');
+          } else {
+            navbar.removeClass('change-fix-top');
+          }
+        });
+      });  
+    </script>   
+   </body>
+</html>

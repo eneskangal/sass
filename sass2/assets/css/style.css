@@ -1,0 +1,109 @@
+@charset "UTF-8";
+/*
+Bu site Enes Kangal tarafından yapılmıştır.
+Bütünü hakları saklıdır.
+23.04.2021
+İletişim için eneskangal@gmail.com
+*/
+/* Adobe Font */
+@import url("https://use.typekit.net/lmj1bob.css");
+/* Header */
+.fixed-top {
+  max-width: 1140px;
+  margin: auto; }
+
+/* Stickbar Ayarlanması*/
+html {
+  scroll-behavior: smooth; }
+
+.fixed-top {
+  max-width: 1140px;
+  margin: auto;
+  -webkit-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear; }
+
+.fixed-top.change-color {
+  max-width: 2000px;
+  margin-top: 0;
+  background-color: rgba(38, 0, 0, 0.2);
+  color: white; }
+
+.fixed-top.change-fix-top {
+  max-width: 2000px;
+  margin-top: 0;
+  background-color: #262bdb;
+  color: white; }
+
+.font-ayarı, .navbar-brand, .nav-link, #hero h1, #hero p, #hero button {
+  font-style: normal;
+  line-height: 1.4; }
+
+.navbar-brand {
+  color: #42495B;
+  font-family: poppins, sans-serif;
+  font-size: 50px;
+  font-weight: bold; }
+
+.nav-link {
+  color: white !important;
+  font-size: 16px;
+  font-weight: medium;
+  font-family: poppins, sans-serif;
+  transition: 0.5s; }
+  .nav-link:hover {
+    color: black !important; }
+
+/* Hero */
+#hero {
+  min-height: 100vh;
+  background-image: url(../img/hero-bg\ .png);
+  background-position: right 0;
+  background-repeat: no-repeat;
+  background-size: contain; }
+  #hero .col-md-2 ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    #hero .col-md-2 ul li a {
+      color: #7E76F9; }
+      #hero .col-md-2 ul li a i {
+        display: block;
+        padding: 20px 0;
+        transition: 0.5s; }
+        #hero .col-md-2 ul li a i:hover {
+          color: #000; }
+  #hero h1 {
+    color: #42495B;
+    font-size: 50px;
+    font-family: poppins, sans-serif;
+    font-weight: 600; }
+  #hero p {
+    color: #7A839E;
+    font-size: 16px;
+    font-family: poppins, sans-serif;
+    font-weight: 400; }
+  #hero button {
+    width: 200px;
+    height: 50px;
+    background-color: #7E76F9;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    box-shadow: 0px 3px 6px 0px rgba(126, 118, 249, 0.29);
+    -webkit-box-shadow: 0px 3px 6px 0px rgba(126, 118, 249, 0.29);
+    -moz-box-shadow: 0px 3px 6px 0px rgba(126, 118, 249, 0.29);
+    transition: 0.5s;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-family: poppins, sans-serif;
+    font-weight: medium; }
+    #hero button:hover {
+      background-color: #000; }
+
+/* responsive */
+@media (max-width: 991px) {
+  h1 {
+    font-size: 40px !important; } }
+
+/*# sourceMappingURL=style.css.map */
