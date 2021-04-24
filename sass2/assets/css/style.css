@@ -35,7 +35,7 @@ html {
   background-color: #262bdb;
   color: white; }
 
-.font-ayarı, .navbar-brand, .nav-link, #hero h1, #hero p, #hero button {
+.font-ayarı, .navbar-brand, .nav-link, #hero h1, #hero p, #hero button, #who .container .row .col-md-6 h6, #who .container .row .col-md-6 h2, #who .container .row .col-md-6 p, #who .container .row .col-md-6 button {
   font-style: normal;
   line-height: 1.4; }
 
@@ -99,7 +99,45 @@ html {
     font-family: poppins, sans-serif;
     font-weight: medium; }
     #hero button:hover {
-      background-color: #000; }
+      background-color: #000;
+      box-shadow: none; }
+
+/* who */
+#who .container .row .col-md-6 h6 {
+  color: #7E76F9 !important;
+  font-size: 20px;
+  font-family: poppins, sans-serif;
+  font-weight: 400; }
+#who .container .row .col-md-6 h2 {
+  color: #42495B !important;
+  font-size: 50px;
+  font-weight: 600;
+  font-family: poppins, sans-serif; }
+#who .container .row .col-md-6 p {
+  color: #7A839E;
+  font-size: 16px;
+  font-weight: lighter;
+  font-family: poppins, sans-serif; }
+#who .container .row .col-md-6 button {
+  width: 160px;
+  height: 40px;
+  border-radius: 25px;
+  background-color: #7E76F9;
+  outline: none;
+  border: none;
+  transition: 0.5s;
+  box-shadow: 0px 3px 6px 0px rgba(126, 118, 249, 0.29);
+  -webkit-box-shadow: 0px 3px 6px 0px rgba(126, 118, 249, 0.29);
+  -moz-box-shadow: 0px 3px 6px 0px rgba(126, 118, 249, 0.29);
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: poppins, sans-serif; }
+  #who .container .row .col-md-6 button:hover {
+    background-color: transparent;
+    border: 1px solid #7E76F9;
+    color: #7E76F9;
+    box-shadow: none; }
 
 /* responsive */
 @media (max-width: 991px) {
