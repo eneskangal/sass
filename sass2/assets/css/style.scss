@@ -7,8 +7,13 @@ Bütünü hakları saklıdır.
 
 /* Adobe Font */
 @import url("https://use.typekit.net/lmj1bob.css");
+.font-ayarı{
+    font-style: normal;
+    line-height: 1.4;   
+    font-family: poppins, sans-serif;
+}
 
-$poppins:poppins,sans-serif;
+
 $beyaz:white;
 
 @mixin  border-radius($x) {
@@ -44,15 +49,9 @@ html{
     background-color: rgba(38, 43, 219, 1);;
     color: white;
 }
-
-.font-ayarı{
-    font-style: normal;
-    line-height: 1.4;    
-}
 .navbar-brand{
     color: #42495B;
-    @extend .font-ayarı;
-    font-family: $poppins;
+    @extend .font-ayarı;    
     font-size: 50px;
     font-weight: bold;
 }
@@ -60,8 +59,7 @@ html{
     color: $beyaz!important;
     @extend .font-ayarı;
     font-size: 16px;
-    font-weight: medium;
-    font-family: $poppins;
+    font-weight: medium;    
     transition: 0.5s;
     &:hover{
         color: black!important;
@@ -99,15 +97,13 @@ html{
     h1{
         @extend .font-ayarı;
         color: #42495B;
-        font-size: 50px;
-        font-family: $poppins;
+        font-size: 50px;        
         font-weight: 600;
     }
     p{
         color: #7A839E;
         @extend .font-ayarı;
-        font-size: 16px;
-        font-family: $poppins;
+        font-size: 16px;        
         font-weight: 400;
     }
     button{
@@ -123,8 +119,7 @@ html{
         transition: 0.5s;
         color: #FFFFFF;
         @extend .font-ayarı;
-        font-size: 16px;
-        font-family: $poppins;
+        font-size: 16px;        
         font-weight: medium;
         &:hover{
             background-color: #000;
@@ -142,23 +137,20 @@ html{
                 h6{
                     color: #7E76F9!important;
                     @extend .font-ayarı;
-                    font-size: 20px;
-                    font-family: $poppins;
+                    font-size: 20px;                   
                     font-weight: 400;
                 }
                 h2{
                     color: #42495B!important;
                     @extend .font-ayarı;
                     font-size: 50px;
-                    font-weight: 600;
-                    font-family: $poppins;
+                    font-weight: 600;                    
                 }
                 p{
                     color: #7A839E;
                     @extend .font-ayarı;
                     font-size: 16px;
-                    font-weight: lighter;
-                    font-family: $poppins;
+                    font-weight: lighter;                    
                 }
                 button{
                     width: 160px;
@@ -174,8 +166,7 @@ html{
                     color: #FFFFFF;
                     @extend .font-ayarı;
                     font-size: 12px;
-                    font-weight: 600;
-                    font-family: $poppins;
+                    font-weight: 600;                    
                     &:hover{
                         background-color: transparent;
                         border: 1px solid #7E76F9;
@@ -188,6 +179,90 @@ html{
         }
     }
 }
+
+/* Servicies */
+
+#servicies{
+    .container{
+        h6{
+            @extend .font-ayarı;
+            color: #7E76F9;
+            font-weight: 400;           
+            font-size: 25px;
+        }
+        h2{
+            @extend .font-ayarı;
+            color: #42495B;
+            font-size: 50px;
+            font-weight: 600;          
+        }
+        .row{
+            .col-lg-4{
+                .serv-box{
+                    width: 100%;
+                    height: 460px;
+                    background-color: #FFFFFF;
+                    @include border-radius(36px);
+                    -webkit-box-shadow: 10px 0px 20px 0px rgba(0, 0, 0, 0.1);
+                    -moz-box-shadow:    10px 0px 20px 0px rgba(0, 0, 0, 0.1);
+                    box-shadow:         10px 0px 20px 0px rgba(0, 0, 0, 0.1);
+                    padding: 30px;
+                    margin: 50px 0;
+                    cursor: pointer;                    
+                    img{                        
+                    }
+                    h4{
+                        margin: 30px 0;
+                        color: #42495B;
+                        @extend .font-ayarı;
+                        font-size: 18px;
+                        font-weight: 600;
+                    }
+                    p{
+                        color: #42495B;
+                        @extend .font-ayarı;
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
+                    button{
+                        float: right;
+                        width: 90px;
+                        height: 30px;
+                        background-color: #7E76F9;
+                        @include border-radius(25px);
+                        -webkit-box-shadow: 3px 0px 6px 0px rgba(0, 0, 0, 0.28);
+                        -moz-box-shadow:    3px 0px 6px 0px rgba(0, 0, 0, 0.28);
+                        box-shadow:         3px 0px 6px 0px rgba(0, 0, 0, 0.28);
+                        outline: none;
+                        border: none;
+                        transition: 0.5s;
+                        color: #FFFFFF;
+                        @extend .font-ayarı;
+                        font-size: 12px;
+                        font-weight: 500;
+                        &:hover{
+                            color: #7E76F9;
+                            border: 1px solid #7E76F9;
+                            background-color: transparent;
+                            box-shadow: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* responsive */
 
