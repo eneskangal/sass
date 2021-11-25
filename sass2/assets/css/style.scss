@@ -208,9 +208,7 @@ html{
                     box-shadow:         10px 0px 20px 0px rgba(0, 0, 0, 0.1);
                     padding: 30px;
                     margin: 50px 0;
-                    cursor: pointer;                    
-                    img{                        
-                    }
+                    cursor: pointer;                  
                     h4{
                         margin: 30px 0;
                         color: #42495B;
@@ -253,7 +251,75 @@ html{
     }
 }
 
+/* Pricies */
 
+#pricing{
+    padding: 50px 0;
+    background-color: rgba(#7E76F9, 0.1);
+    .container{
+        h6{
+            @extend .font-ayarı; 
+            color: #7E76F9;   
+            text-align: center;   
+            font-size: 20px;
+            font-weight: 400;   
+        }
+        h2{
+            @extend .font-ayarı;
+            color: #42495B;
+            font-weight: 600;
+            font-size: 50px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .your-class{           
+                width: 100%;
+                height: 450px;
+                background-color: #FFFFFF;
+                @include border-radius(26px); 
+                margin-top: 20px;                           
+                h4{
+                @extend .font-ayarı;
+                color: #42495B;
+                font-size: 28px;
+                font-weight: 400;
+                text-align: center;
+                margin: 50px 0;
+            }
+            p{
+                @extend .font-ayarı;
+                color: #7A839E;
+                font-size: 16px;
+                font-weight: lighter;
+                text-align: center;
+            }
+            h5{
+                @extend .font-ayarı;
+                color: #7E76F9;
+                font-size: 30px;
+                font-weight: 600;
+                text-align: center;            
+            }
+            button{
+                width: 170px;
+                height: 50px;
+                background-color: #FFFFFF;
+                border: 1px solid #7E76F9;
+                @include border-radius(26px);
+                color: #42495B;   
+                @extend .font-ayarı;   
+                font-size: 16px;
+                font-weight: medium;   
+                transition: 0.5s; 
+                &:hover{
+                    background-color: #7E76F9;
+                    border: none;
+                    color: white;
+                }    
+            }
+        }
+    }
+}
 
 
 

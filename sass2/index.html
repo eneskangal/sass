@@ -6,6 +6,8 @@
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">    
     <title>Ana Sayfa</title>
   </head>
   <body>
@@ -26,7 +28,7 @@
                 <a class="nav-link" href="#servicies">SERVICES</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#who"> PRICES</a>
+                <a class="nav-link" href="#pricing"> PRICES</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#contact">CONTACT</a>
@@ -145,8 +147,61 @@
       </div>
     </section>
 
+    <section id="pricing">
+      <div class="container">
+        <h6>Pricing</h6>
+        <h2>Our Pricing</h2>        
+          <div class="your-class">
+            <h4>Gold Package</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh, sagittis ac faucibus sit amet, faucibus vitae lacus. </p>
+            <h5>$ 140</h5>
+            <button>See Details</button>          
+          <h4>Platinum Package</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh, sagittis ac faucibus sit amet, faucibus vitae lacus. </p>
+            <h5>$ 140</h5>
+            <button>See Details</button>
+          <h4>Silver Package</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh, sagittis ac faucibus sit amet, faucibus vitae lacus. </p>
+            <h5>$ 140</h5>
+            <button>See Details</button>
+          </div>    
+          <div class="your-class">
+            <h4>Gold Package</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh, sagittis ac faucibus sit amet, faucibus vitae lacus. </p>
+            <h5>$ 140</h5>
+            <button>See Details</button>
+          <h4>Platinum Package</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh, sagittis ac faucibus sit amet, faucibus vitae lacus. </p>
+            <h5>$ 140</h5>
+            <button>See Details</button>
+          <h4>Silver Package</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh, sagittis ac faucibus sit amet, faucibus vitae lacus. </p>
+            <h5>$ 140</h5>
+            <button>See Details</button>
+          </div>                     
+          <div class="your-class">
+            <h4>Gold Package</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh, sagittis ac faucibus sit amet, faucibus vitae lacus. </p>
+            <h5>$ 140</h5>
+            <button>See Details</button>         
+          <h4>Platinum Package</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh, sagittis ac faucibus sit amet, faucibus vitae lacus. </p>
+            <h5>$ 140</h5>
+            <button>See Details</button>
+          <h4>Silver Package</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl nibh, sagittis ac faucibus sit amet, faucibus vitae lacus. </p>
+            <h5>$ 140</h5>
+            <button>See Details</button>
+          </div>                                      
+      </div>
+    </section>
+
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/owl.carousel.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>    
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>     
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>    
     <script>
       $(document).ready(function () {
         // Add smooth scrolling to all links
@@ -189,5 +244,18 @@
         });
       });  
     </script>   
+   <script>
+    $('.your-class').owlCarousel({
+    center: true,
+    items:2,
+    loop:true,
+    margin:10,
+    responsive:{
+        600:{
+            items:4
+        }
+    }
+}); 
+   </script>
    </body>
 </html>
